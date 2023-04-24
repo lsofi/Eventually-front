@@ -1,0 +1,525 @@
+html {
+    scroll-padding-top: 8rem;
+}
+
+.top-nav-l {
+    top: 1rem;
+    width: 90% !important;
+    height: fit-content;
+    padding-inline: 1rem;
+    border-radius: 1.5rem;
+    background-color: var(--card);
+    position: fixed;
+    margin: 0 auto;
+    left: 0;
+    right: 0;
+    justify-content: normal;
+    z-index: 1;
+}
+
+.top-nav {
+    top: 1rem;
+    width: 90%;
+    height: 2.5rem;
+    border-radius: 1.5rem;
+    background-color: var(--card);
+    position: fixed;
+    margin: 0 auto;
+    left: 0;
+    right: 0;
+}
+
+#responsive-navbar-nav {
+    flex-direction: column;
+}
+
+.LandingPage .nav-logo img {
+    height: 1.6rem;
+    margin-left: 1rem !important;
+}
+
+.btn {
+    font-weight: 500;
+    border: none;
+    border-radius: 0.5rem;
+    padding-inline: 5px;
+}
+
+.btn-orange,
+.btn-orange:hover,
+.btn-orange:focus,
+.btn-orange:active,
+.btn-orange:disabled {
+    background-color: var(--primary) !important;
+    color: var(--text-title) !important;
+}
+
+.btn-white,
+.btn-white:hover,
+.btn-white:focus,
+.btn-white:active,
+.btn-white:disabled {
+    background-color: var(--background) !important;
+    color: var(--text-title) !important;
+}
+
+.LandingPage .btn {
+    font-size: min(1rem, 3.2vw);
+}
+
+.LandingPage .navbar-brand-btn {
+    margin-right: 0 !important;
+    margin-left: auto;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.LandingPage .nav-links {
+    font-weight: bold;
+    /* color: var(--text-title) !important */
+}
+
+.LandingPage .landing-body {
+    margin: 0 2rem 0 1rem;
+}
+
+.LandingPage .home-div {
+    margin-top: 6.5rem;
+}
+
+.LandingPage .div-title {
+    flex-direction: column !important;
+    margin: 8rem 6rem 3rem;
+}
+
+.LandingPage .div-img {
+    display: flex;
+    justify-content: center;
+}
+
+.LandingPage .div-img img {
+    border-radius: 1.25rem;
+    border: 0.5rem solid var(--tertiary);
+    aspect-ratio: 1/1;
+    max-width: 18.594rem;
+}
+
+.div-btn {
+    display: flex;
+    justify-content: center;
+    margin: 1rem 0;
+    gap: 2rem;
+}
+
+.LandingPage .div-btn .btn-h {
+    font-weight: 700;
+    font-size: clamp(0.8rem, 2vw, 10rem);
+    border: none;
+    height: 2rem;
+    width: 7rem;
+    border-radius: 20rem;
+    padding-inline: 5px;
+}
+
+.LandingPage .div-btn .btn-gray {
+    background-color: var(--card);
+    color: var(--text-title);
+}
+
+.header-sub-div1 {
+    margin-top: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center !important;
+}
+
+.LandingPage .title {
+    font-weight: 700;
+    font-size: 0.8rem;
+    color: var(--tertiary);
+    margin-bottom: 0;
+}
+
+.LandingPage .subtitle {
+    font-weight: 700;
+    font-size: 2rem;
+    margin-bottom: 1.625rem;
+}
+
+.header-sub-div1 p {
+    margin: 0 0.938rem;
+    text-align: center;
+}
+
+.needs {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center
+}
+
+.needs img {
+    width: 45%;
+    height: auto;
+}
+
+.needs p {
+    text-align: center;
+    margin: 0 1rem;
+    font-size: 0.9rem;
+}
+
+.header-sub-div2 {
+    margin-top: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: start !important;
+    margin-left: 0.7rem;
+}
+
+.body-sub-div2 .us-rows {
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: row;
+    margin-top: 1.5rem;
+}
+
+.body-sub-div2 .features {
+    background-color: var(--card);
+    display: flex !important;
+    flex-direction: column;
+    border-radius: 3rem;
+    margin: 0 1.5rem;
+    padding: 2.5rem 1.25rem 1.875rem 1.25rem;
+}
+
+.body-sub-div2 .features .features-top {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.body-sub-div2 .features .features-top .features-icon {
+    background-color: var(--primary);
+    padding: 0.625rem 0.938rem;
+    font-size: 1.875rem;
+    border-radius: 50%;
+    margin-right: 0.938rem;
+}
+
+.body-sub-div2 .features .features-bottom {
+    display: flex;
+    padding: 1.5rem 0.313rem 0.2rem 0.938rem;
+}
+
+.body-sub-div3 .benefits {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: var(--card);
+    border-radius: 3rem;
+    margin: 0 3.5rem;
+    padding: 1.5rem 1.25rem 1.875rem 1.25rem;
+}
+
+.body-sub-div3 .benefits .benefits-text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.body-sub-div3 .benefits .benefits-text p {
+    text-align: center;
+}
+
+.body-sub-div3 .benefits img {
+    width: 70% !important;
+    border-radius: 1.25rem;
+    border: 0.4rem solid var(--tertiary);
+    margin-bottom: 1rem;
+}
+
+.body-sub-div4-top .us-rows {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.body-sub-div4-top .us-rows .us {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    font-size: 0.85rem;
+    font-weight: bold;
+}
+
+.body-sub-div4-top .us img {
+    border-radius: 50%;
+    max-width: 3.125rem;
+    filter: gray;
+    /* IE6-9 */
+    -webkit-filter: grayscale(1);
+    /* Google Chrome, Safari 6+ & Opera 15+ */
+    filter: grayscale(1);
+    /* Microsoft Edge and Firefox 35+ */
+}
+
+.body-sub-div4-bottom {
+    margin-bottom: 1rem;
+}
+
+.body-sub-div4-bottom .btn-form-contact {
+    direction: rtl;
+}
+
+footer {
+    background-color: var(--card);
+    max-height: 150px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+footer img {
+    max-height: 30px;
+    max-width: 110px;
+    margin-bottom: 0;
+}
+
+footer p {
+    font-size: 0.688rem;
+    margin-bottom: 0;
+}
+
+
+footer a {
+    color: var(--primary);
+    font-size: 0.688rem;
+}
+
+footer a :hover {
+    color: var(--tertiary);
+    font-size: 0.688rem;
+}
+
+@media (min-width: 38.5rem) {
+    .LandingPage .navbar-brand-btn {
+        justify-content: end;
+        width: fit-content;
+    }
+}
+
+@media (min-width: 50rem) {
+    .LandingPage .top-nav-l {
+        width: 90% !important;
+        height: fit-content;
+        top: 1.5vw;
+        position: fixed;
+        margin: 0 auto;
+        left: 0;
+        right: 0;
+        justify-content: space-between !important;
+    }
+
+    .top-nav {
+        width: 80%;
+        top: 1.5vw;
+        height: max(3vw, 2.8rem)
+    }
+
+    .nav-logo img {
+        max-height: 40px !important;
+        height: 100%;
+    }
+
+    .nav-link-container {
+        margin-right: 0 !important;
+    }
+
+    .landing-body {
+        margin: 0 6rem;
+    }
+
+    .home-div {
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+        width: 80%;
+        margin: 0 auto;
+    }
+
+    .div-title {
+        flex-direction: column !important;
+        margin: 3rem 2rem -8rem;
+    }
+
+    .div-title h1 {
+        font-size: 3rem;
+    }
+
+    .div-img {
+        display: flex;
+        justify-content: center;
+        grid-row: span 2;
+    }
+
+    .LandingPage .div-img img {
+        border-radius: 1.25rem;
+        border: 0.5rem solid var(--tertiary);
+        object-fit: cover;
+        width: 100%;
+        max-width: 27.063rem;
+    }
+
+    .div-btn {
+        display: flex;
+        justify-content: center;
+        margin: 1rem 0;
+        gap: 2rem;
+        align-items: center;
+    }
+
+    .LandingPage .div-btn .btn-h {
+        font-weight: 700;
+        font-size: min(2vw, 1.2rem);
+        border: none;
+        height: 3rem;
+        width: 10rem;
+        border-radius: 20rem;
+        padding-inline: 5px;
+        align-items: center;
+    }
+
+    .header-sub-div1 {
+        margin-top: 2rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center !important;
+    }
+
+    .title {
+        font-weight: 700;
+        font-size: 1.5rem;
+        color: var(--tertiary);
+        margin-bottom: 0;
+    }
+
+    .subtitle {
+        font-weight: 700;
+        font-size: 3.2rem;
+    }
+
+    .header-sub-div1 p {
+        margin: 0 0.938rem;
+        text-align: center;
+        font-size: 1.25rem;
+    }
+
+    .body-sub-div1 {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .needs {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        padding: 0;
+    }
+
+    .needs img {
+        width: 40%;
+        height: auto;
+    }
+
+    .needs h6 {
+        font-size: 1.25rem;
+    }
+
+    .needs p {
+        text-align: center;
+        margin: 0 1rem;
+        font-size: 1.1rem;
+    }
+
+    .body-sub-div3 .benefits {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        background-color: var(--card);
+        border-radius: 3rem;
+        width: 60%;
+        margin: auto;
+        padding: 1.5rem 2rem 1.5rem 5rem;
+    }
+
+    .body-sub-div3 .benefits .benefits-text {
+        display: flex;
+        flex-direction: column;
+        padding-left: 3rem;
+    }
+
+    .body-sub-div3 .benefits .benefits-text h5 {
+        font-weight: 750;
+        font-size: 2rem;
+    }
+
+    .body-sub-div3 .benefits .benefits-text p {
+        font-size: 1.2rem;
+    }
+
+    .body-sub-div3 .benefits img {
+        border-radius: 1.25rem;
+        border: 0.5rem solid var(--tertiary);
+        width: 50% !important;
+        max-width: 18.75rem;
+    }
+
+    .body-sub-div4 {
+        display: flex !important;
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
+
+    .body-sub-div4-top {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        flex-grow: 2;
+    }
+
+
+    .body-sub-div4-top .us-rows {
+        display: flex;
+        align-items: center;
+        flex-direction: row;
+        justify-content: space-between;
+        width: 70%;
+    }
+
+    .body-sub-div4-top .us-rows .us {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        font-size: 1.188rem;
+        font-weight: bold;
+        margin-top: 2%;
+    }
+
+    .body-sub-div4-top .us img {
+        border-radius: 50%;
+        max-width: 5.313rem;
+        filter: gray;
+        /* IE6-9 */
+        -webkit-filter: grayscale(1);
+        /* Google Chrome, Safari 6+ & Opera 15+ */
+        filter: grayscale(1);
+        /* Microsoft Edge and Firefox 35+ */
+    }
+
+    .body-sub-div4-bottom {
+        flex-grow: 2;
+    }
+
+}

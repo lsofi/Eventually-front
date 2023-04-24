@@ -1,0 +1,140 @@
+.btn.btn-primary-modal,
+.btn.btn-primary-modal:hover,
+.btn.btn-primary-modal:focus,
+.btn.btn-primary-modal:active {
+    background-color: var(--primary) !important;
+    color: var(--text-title) !important;
+    border-radius: .75rem;
+    font-size: 1rem;
+}
+
+.btn.btn-secondary-modal,
+.btn.btn-secondary-modal:hover,
+.btn.btn-secondary-modal:focus,
+.btn.btn-secondary-modal:active {
+    background-color: var(--background) !important;
+    color: var(--text-title) !important;
+    border-radius: .75rem;
+    font-size: 1rem;
+}
+
+.btn.btn-terciary-modal,
+.btn.btn-tertiary-modal:hover,
+.btn.btn-tertiary-modal:focus,
+.btn.btn-tertiary-modal:active {
+    background-color: var(--tertiary-muted) !important;
+    color: var(--text-title) !important;
+    border-radius: .75rem;
+    font-size: 1rem;
+}
+
+.btn.btn-gray-modal,
+.btn.btn-gray-modal:hover,
+.btn.btn-gray-modal:focus,
+.btn.btn-gray-modal:active {
+    background-color: var(--gray) !important;
+    color: var(--text-title) !important;
+    border-radius: .75rem;
+    font-size: 1rem;
+}
+
+.btn-add-poll,
+.btn-add-poll:hover,
+.btn-add-poll:focus,
+.btn-add-poll:active {
+    background-color: var(--primary);
+    border-radius: 50%;
+    font-size: 2rem;
+}
+
+.modal-body .accordion-button,
+.modal-body .accordion-body {
+    background-color: var(--card);
+}
+
+.modal-body .accordion-body {
+    padding-inline: 0;
+}
+
+.modal-body .accordion-button {
+    font-weight: bold;
+    padding: 0;
+    font-size: 1.5rem;
+}
+
+.modal-body .accordion-button:not(.colapsed) {
+    color: var(--text-title);
+    background-color: var(--card);
+}
+
+.modal-body .accordion-item {
+    border: none;
+    margin-inline: 1rem;
+}
+
+.modal-body .accordion-header {
+    border-bottom: 1px solid var(--text-title);
+}
+
+.modal-body.user-add-modal .rbt-input-hint {
+    color: var(--text-ultra-muted) !important;
+}
+
+.modal-body.user-add-modal .dropdown-menu {
+    background-color: var(--background);
+    padding: 0.25rem;
+}
+
+.modal-body.user-add-modal .dropdown-menu .rbt-highlight-text {
+    background-color: var(--primary-ultra-muted);
+    color: inherit;
+    padding: 0rem;
+    border-radius: 0.2rem;
+}
+
+.modal-body.user-add-modal .dropdown-item {
+    padding-left: 0.75rem;
+    padding-right: 0.75rem;
+}
+
+.modal-body.user-add-modal .dropdown-item:hover {
+    background-color: var(--card);
+}
+
+.modal-body.user-add-modal .dropdown-item.active {
+    background-color: var(--primary-ultra-muted);
+}
+
+.modal-body.user-add-modal .option-photo {
+    width: 2rem;
+    height: 2rem;
+    border-radius: 2rem;
+    aspect-ratio: 1/1;
+}
+
+.photos-view-menu {
+    background-color: var(--background);
+}
+
+.photos-view-img {
+    aspect-ratio: 1/1;
+    object-fit: cover;
+}
+
+.photos-view-selected {
+    background-color: var(--primary-muted) !important;
+}
+
+.carousel-upload {
+    aspect-ratio: 16/9;
+}
+
+.carousel-upload-img {
+    object-fit: cover;
+}
+
+.dropzone {
+    border: 4px dashed black;
+    border-radius: 1rem;
+    padding: 10px;
+}

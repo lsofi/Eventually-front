@@ -1,0 +1,332 @@
+.page-body {
+    width: -webkit-fill-available;
+    width: -moz-available;
+    margin: 0 1rem;
+}
+
+.btn-theme-toggle {
+    border: none;
+    background-color: rgba(0, 0, 0, 0);
+    color: var(--text-title);
+    padding: 0;
+    margin-right: 1rem
+}
+
+.btn.btn-notification {
+    position: relative;
+    background-color: var(--card);
+    color: var(--text-title);
+    padding: 0.25rem 0.5rem;
+    margin: 0.25rem 1rem;
+}
+
+.btn.btn-notification:not(.active):not(.no-after)::after {
+    content: attr(data-count);
+    position: absolute;
+    bottom: 0rem;
+    right: 0rem;
+    background-color: var(--primary);
+    border-radius: 50%;
+    padding: 0 0.25rem;
+    font-size: 0.60rem;
+}
+
+
+.btn.btn-notification.active,
+.btn.btn-notification:hover {
+    background-color: var(--card-border-color);
+}
+
+.side-bar-container .top-nav {
+    width: auto;
+    margin: 0 0.5rem;
+}
+
+.explore-input {
+    background-color: var(--background);
+    flex-grow: 1;
+    border-radius: 1rem 0 0 1rem;
+    height: 75%;
+    padding: 0 1rem;
+    min-width: 100px;
+}
+
+.top-nav .explore-input {
+    margin-left: 2.5rem;
+}
+
+.btn-search {
+    border-radius: 0 .75rem .75rem 0;
+    background-color: var(--background);
+    color: var(--gray);
+    height: 75%;
+    aspect-ratio: 1/1;
+}
+
+.top-nav .btn-search {
+    margin-left: 0.2rem;
+    margin-right: .75rem;
+}
+
+.top-nav hr {
+    height: 75%;
+    width: 2px;
+    color: var(--text-title);
+    opacity: 1;
+    border-radius: 1px;
+}
+
+.top-nav .img-top-nav {
+    height: 80%;
+}
+
+
+
+.Sidebar {
+    position: fixed;
+    left: -12rem;
+    width: 12rem;
+    height: 100%;
+    background-color: var(--primary);
+    transition: 100ms ease-in;
+    overflow-y: auto;
+}
+
+.Sidebar.active {
+    left: 0;
+}
+
+.menu-bars {
+    margin-left: 1.5rem;
+    margin-top: 1.75rem;
+    cursor: pointer;
+}
+
+.Sidebar .user {
+    margin-top: 3.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.Sidebar .img-usuario {
+    width: 9rem;
+    aspect-ratio: 1/1;
+    border-radius: 50%;
+    padding: 0;
+}
+
+.premium-subscription-img-container>img {
+    outline: 3px solid var(--premium-dark-blue);
+}
+
+.premium-subscription-img-container.img-outline-lg>img {
+    outline: 5px solid var(--premium-dark-blue);
+}
+
+.premium-subscription-img-container.img-outline-sm>img {
+    outline: 2px solid var(--premium-dark-blue);
+}
+
+.premium-subscription-img-container {
+    position: relative;
+}
+
+.premium-subscription-img-container::after {
+    content: '';
+    width: 15%;
+    aspect-ratio: 1/1;
+    border-radius: 50%;
+    background-image: url('/resources/Icons/balloon.svg');
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: 40%;
+    outline: 3px solid var(--premium-dark-blue);
+    position: absolute;
+    left: 15%;
+    bottom: 0;
+}
+
+.premium-subscription-img-container.img-outline-sm::after {
+    outline: 2px solid var(--premium-dark-blue);
+    width: 35%;
+    left: 0
+}
+
+.Sidebar .side-bar-list {
+    height: auto;
+    width: 100%;
+    padding: 0;
+}
+
+.Sidebar .side-bar-list .row {
+    width: auto;
+    height: 3.125rem;
+    list-style-type: none;
+    margin: 0.2rem 0.5rem 0.2rem 0.5rem;
+    display: flex;
+    color: var(--text-title);
+    justify-content: center;
+    align-items: center;
+}
+
+.Sidebar .side-bar-list li:hover {
+    cursor: pointer;
+    background-color: var(--background);
+    border-radius: 2.5rem;
+}
+
+.Sidebar .side-bar-list li.active {
+    background-color: var(--background);
+    border-radius: 2.5rem;
+    position: relative;
+}
+
+.Sidebar .row #icon {
+    flex: 20%;
+    display: grid;
+    justify-content: right;
+}
+
+.Sidebar .row #title {
+    flex: 70%;
+    text-align: left;
+}
+
+.Sidebar .sidebar-bottom {
+    position: relative;
+    bottom: 0;
+}
+
+.notifications-tab {
+    position: absolute;
+    border: 1px solid var(--card-border-color);
+    background-color: var(--card);
+    border-radius: 1rem;
+    padding: 1rem;
+    max-height: 80vh;
+    width: 25rem;
+    overflow-y: auto;
+    top: 3rem;
+    right: -7rem;
+}
+
+.notifications-tab .notifications-container {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 0.5rem;
+    padding: 0.5rem 1rem;
+}
+
+.notification-card {
+    position: relative;
+    background-color: var(--card);
+    padding: 1rem;
+    padding-right: 2rem;
+    border-radius: 1rem;
+    width: 22rem;
+    cursor: pointer;
+    color: var(--text-paragraph)
+}
+
+.notification-card.not-seen {
+    background-color: var(--background);
+}
+
+.notification-card.not-seen::after {
+    content: '';
+    position: absolute;
+    right: 0.75rem;
+    top: 50%;
+    background-color: var(--primary);
+    border-radius: 50%;
+    width: 0.75rem;
+    aspect-ratio: 1/1;
+}
+
+.dropdown-notification {
+    position: absolute;
+    top: 0.5rem;
+    right: 0.75rem;
+}
+
+@media (min-width: 50rem) {
+    .menu-bars {
+        display: none;
+    }
+
+    .top-nav .explore-input {
+        margin-left: 0.5rem;
+    }
+
+    .Sidebar {
+        left: 0;
+        float: left;
+        position: fixed;
+    }
+
+    .page-body {
+        width: 80%;
+    }
+
+    .side-bar-container .top-nav {
+        width: fit-content;
+        margin-left: auto;
+        margin-right: 2rem;
+        height: max(2vw, 2.5rem);
+        gap: 1rem;
+        padding-left: 1rem;
+    }
+
+    .btn.btn-notification {
+        margin: 0.25rem 0;
+    }
+
+    .Sidebar .side-bar-list li.active,
+    .Sidebar .side-bar-list li:hover {
+        border-radius: 2.5rem 0 0 2.5rem;
+    }
+
+    .Sidebar .side-bar-list .row {
+        margin: 0.2rem 0rem 0.2rem 0.5rem;
+    }
+
+    .Sidebar .side-bar-list li.active::before {
+        content: '';
+        position: absolute;
+
+        width: 0.5rem;
+        aspect-ratio: 1/2;
+
+        top: -1rem;
+        right: 0;
+
+        background-color: none;
+        border-bottom-right-radius: .5rem;
+        box-shadow: 0 0.5rem 0 0 var(--background);
+    }
+
+    .Sidebar .side-bar-list li.active::after {
+        content: '';
+        position: absolute;
+
+        width: 0.5rem;
+        aspect-ratio: 1/2;
+
+        bottom: -1rem;
+        right: 0;
+
+        background-color: none;
+        border-top-right-radius: .5rem;
+        box-shadow: 0 -0.5rem 0 0 var(--background);
+    }
+
+    .notifications-tab {
+        width: 35rem;
+    }
+
+    .notifications-tab .notifications-container .notification-card {
+        width: 32rem
+    }
+}

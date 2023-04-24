@@ -1,0 +1,276 @@
+.UserConfig .card-image-profile {
+    position: relative;
+    top: 0;
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.UserConfig .card-image-profile.modify:hover {
+    opacity: 0.75;
+}
+
+.UserConfig .card-user {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+
+.UserConfig .user-name {
+    border: none;
+    background-color: var(--card);
+    color: var(--text-title);
+    min-width: fit-content;
+    border-radius: 2.5rem;
+    font-size: 1.3rem;
+    text-align: center;
+    padding: 0.3rem;
+}
+
+/*boton modificar*/
+.UserConfig .btn-modify {
+    background-color: var(--primary);
+    color: var(--text-title);
+    width: fit-content;
+    padding: 0.5rem 1rem;
+    border-radius: 2.5rem;
+    position: absolute;
+    right: -3rem;
+}
+
+.UserConfig .btn-modify:hover {
+    color: #EFF0F3;
+}
+
+.UserConfig .btn-modify .icon {
+    width: 1.3rem;
+    aspect-ratio: 1/1;
+}
+
+.UserConfig .top-card {
+    width: min(100%, 700px);
+    flex-shrink: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.UserConfig .accordion-button,
+.UserConfig .accordion-body {
+    background-color: var(--card);
+}
+
+.UserConfig .accordion-button {
+    font-weight: bold;
+}
+
+.UserConfig .accordion-button:not(.colapsed) {
+    color: var(--text-title);
+}
+
+.UserConfig .card {
+    width: 80%;
+    background-color: var(--card) !important;
+    padding: 0.5rem;
+    border-radius: 1rem;
+}
+
+.UserConfig .accordion-item {
+    border: none;
+}
+
+.UserConfig .btn-container {
+    gap: 1rem;
+    padding: 0.5rem 1rem;
+}
+
+.UserConfig .btn {
+    font-size: 1rem;
+    width: fit-content;
+}
+
+.UserConfig .btn-restablecer,
+.btn-eliminar {
+    background-color: var(--background);
+    border-color: #69728C;
+    color: var(--text-title);
+    font-weight: bold;
+}
+
+.btn-guardar {
+    background-color: var(--primary);
+    color: var(--text-title);
+    font-weight: bold;
+}
+
+.btn-guardar:hover,
+.btn-guardar:focus,
+.btn-guardar:active,
+.btn-guardar:disabled {
+    background-color: var(--primary) !important;
+    color: var(--text-title) !important;
+    box-shadow: none;
+}
+
+.btn-eliminar:hover,
+.btn-eliminar:focus,
+.btn-eliminar:active,
+.btn-eliminar:disabled {
+    background-color: var(--background) !important;
+    color: var(--text-title) !important;
+    box-shadow: none;
+}
+
+.card.premium-subscribe-card {
+    background-color: var(--premium-purple) !important;
+    padding: 1rem;
+    border: none;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.card .premium-cancel-card {
+    background-color: var(--premium-purple) !important;
+    padding: 1rem;
+    border: none;
+    display: flex;
+    border-radius: 2rem;
+    flex-wrap: wrap;
+}
+
+.card.premium-subscribe-card button,
+.card .premium-cancel-card button {
+    background-color: var(--tertiary);
+}
+
+.premium-label-eventually {
+    font-weight: bold;
+    font-size: min(1.25rem, 1rem + 0.5vw);
+    color: #0d0d0d
+}
+
+.premium-label-premium {
+    font-weight: bolder;
+    font-size: min(2rem, 1.25rem + 0.5vw);
+    color: var(--premium-dark-blue);
+    font-family: "Black Han Sans";
+}
+
+.premium-label-eventually.lg {
+    font-size: min(10rem, 1rem + 4vw);
+}
+
+.premium-label-premium.lg {
+    font-size: min(10rem, 1rem + 5vw);
+}
+
+.premium-label-plan {
+    font-size: min(2rem, 1rem + 1vw);
+}
+
+.premium-benefits-container {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.premium-benefits-container>div {
+    font-weight: bold;
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+    font-size: min(1.25rem, 0.8rem + 0.5vw);
+}
+
+.premium-benefits-container>div>svg {
+    font-size: 2rem;
+    width: 2rem;
+}
+
+.premium-table-container {
+    display: flex;
+    justify-content: center;
+    margin: 2rem 0;
+}
+
+.premium-table-container table {
+    font-weight: bold;
+    border-collapse: collapse;
+    border-style: hidden;
+    margin: 0.5rem;
+    font-size: min(1rem, 0.5rem + 0.5vw);
+}
+
+.premium-table-container td,
+.premium-table-container th {
+    border: 2px solid var(--primary);
+    padding: 1rem;
+}
+
+
+.premium-table-container th {
+    border-bottom: 4px solid var(--primary);
+}
+
+.premium-table-container th,
+.premium-table-container td {
+    border-right: 4px solid var(--primary);
+}
+
+.premium-table-container tr td.table-data {
+    color: var(--text-muted)
+}
+
+.premium-table-container tr td.table-data svg {
+    font-size: min(2rem, 1rem + 2vw);
+}
+
+.premium-table-container .responsive-font-size.md {
+    font-size: min(1.5rem, 0.5rem + 0.5vw);
+}
+
+.premium-table-container .responsive-font-size.lg {
+    font-size: min(2rem, 0.5rem + 1vw);
+}
+
+.premium-table-container tr td:not(.table-data) {
+    max-width: 15rem;
+}
+
+.premium-table-container button,
+.premium-table-container button:hover,
+.premium-table-container button:focus {
+    background-color: var(--premium-dark-blue);
+}
+
+.modal-body .rccs {
+    width: 100%;
+    margin-top: -7rem;
+}
+
+.modal-body .rccs__card {
+    width: 330px;
+    height: auto;
+    aspect-ratio: 1.5858;
+}
+
+.modal-body .rccs__card--unknown>div {
+    background: var(--primary-muted);
+}
+
+.modal-body .rccs__card--front,
+.modal-body .rccs__card--back {
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.6);
+}
+
+@media (min-width: 50rem) {
+    .UserConfig .card {
+        width: 60%;
+    }
+
+    .premium-table-container table {
+        margin: 0;
+    }
+}
